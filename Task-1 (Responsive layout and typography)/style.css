@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #d3d3d3;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: white;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header .logo {
+    width: 200px;
+    height: 180px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    display: inline-block;
+    line-height: 120px;
+    text-align: center;
+    background-image: url("Images/logo.jpg");
+    background-size: 120%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    gap: 40px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+
+.main-title {
+    font-family: "Protest Guerrilla";
+    font-weight: bold;
+    text-align: left;
+}
+
+.introduction {
+    padding: 50px;
+    padding-bottom: 0px;
+}
+
+.main-title h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.sub-title h2 {
+    margin: 0%;
+}
+
+.sub-title {
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 40px;
+    font-family: "Protest Guerrilla";
+}
+
+.content-container {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.text-item {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.first-paragraph {
+    margin: 0;
+    font-size: 18px;
+}
+
+.grid-container {
+    column-count: 3;
+    padding: 50px;
+    padding-top: 0px;
+}
+
+h1 {
+    font-family: "Protest Guerrilla";
+}
+
+.heading {
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.albums {
+    display: flex;
+    width: 100%;
+    gap: 0px;
+}
+
+.albums .featured-album {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.albums .album-covers {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.albums .album-covers {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.albums .album-covers .album-cover {
+    width: 50%;
+}
+
+.author-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 20px 0;
+}
+
+.text-section {
+    max-width: 60%;
+    text-align: left;
+}
+
+.text-section h1 {
+    text-align: center;
+}
+
+.profile {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #14181d;
+    color: aliceblue;
+    padding: 20px;
+}
+
+@media (max-width: 539px) {
+    .header .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .nav {
+        gap: 12px;
+    }
+
+    .main-title {
+        font-size: 24px;
+    }
+
+    .sub-title {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 12px;
+    }
+
+    .albums {
+        flex-direction: column;
+    }
+
+    .albums .featured-album {
+        display: none;
+    }
+
+    .albums .featured-album,
+    .albums .album-covers {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .albums .album-covers .album-cover {
+        width: 100%;
+    }
+
+    .albums .album-cover img {
+        width: 100%;
+    }
+
+    .grid-container {
+        column-count: 1;
+    }
+
+    .grid-container h1 {
+        text-align: center;
+    }
+
+    .author-section {
+        flex-direction: column-reverse;
+    }
+
+    .profile {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 12px;
+    }
+
+    .text-section {
+        max-width: 100%;
+    }
+
+    .text-section h1 {
+        text-align: center;
+    }
+}
+
+@media (min-width: 540px) and (max-width: 719px) {
+    .header .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .nav {
+        gap: 20px;
+    }
+
+    .main-title {
+        font-size: 32px;
+    }
+
+    .sub-title {
+        font-size: 20px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .albums .featured-album {
+        display: none;
+    }
+
+    .albums .featured-album,
+    .albums .album-covers {
+        width: 100%;
+    }
+
+    .albums .featured-album,
+    .albums .album-covers img {
+        height: 100%;
+    }
+
+    .grid-container {
+        column-count: 1;
+    }
+
+    .grid-container h1 {
+        text-align: center;
+    }
+
+    .profile {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 1023px) {
+    .header .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .nav {
+        gap: 30px;
+    }
+
+    .main-title {
+        font-size: 36px;
+    }
+
+    .sub-title {
+        font-size: 22px;
+    }
+
+    .container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .albums .featured-album {
+        display: none;
+    }
+
+    .albums .featured-album,
+    .albums .album-covers {
+        width: 100%;
+    }
+
+    .grid-container {
+        column-count: 1;
+    }
+
+    .grid-container h1 {
+        text-align: center;
+    }
+
+    .profile {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header .logo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .nav {
+        gap: 50px;
+    }
+
+    .main-title {
+        font-size: 48px;
+    }
+
+    .sub-title {
+        font-size: 24px;
+    }
+
+    .content-container .first-paragraph {
+        margin-right: 30px;
+    }
+
+    .albums .featured-album,
+    .albums .album-covers {
+        width: 50%;
+    }
+
+    .grid-container {
+        column-count: 3;
+    }
+
+    .profile {
+        width: 150px;
+        height: 150px;
+    }
+}

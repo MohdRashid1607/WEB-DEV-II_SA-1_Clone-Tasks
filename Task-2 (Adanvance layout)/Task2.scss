@@ -1,0 +1,24 @@
+/*Imported google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Protest+Guerrilla&family=Teko:wght@300..700&display=swap');
+
+// Colors
+$pageBackground: #4dccbd;    // Previously $light-blue
+$contentBackground: #231651; // Previously $dark-blue
+$textLight: #FFFFFF;        // Previously $white
+$textDark: #070410;         // Previously $black
+
+// Spacing
+$spacingNormal: 16px;       // Previously $small-spacing
+$spacingWide: 48px;         // Previously $large-spacing
+
+// Typography
+$titleSize: 3em;            // Previously $header-font-size
+$actionSize: 2em;           // Previously $button-font-size
+$bodySize: 1.5em;           // Previously $movie-font-size
+$headingFont: "Teko", sans-serif;    // Previously $teko-font
+$bodyFont: "Lato", sans-serif;       // Previously $lato-font
+
+// Effects
+$navShadow: 0px 10px 5px #070410;    // Previously $header-shadow
+$cardShadow: 10px 10px 10px #070410; // Previously $container-shadow
