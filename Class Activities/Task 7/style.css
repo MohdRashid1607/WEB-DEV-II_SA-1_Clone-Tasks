@@ -1,0 +1,38 @@
+/* Imported google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Updock&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Protest+Guerrilla&family=Updock&display=swap');
+
+/* body styling */
+body {
+    height: 100vh;
+    background-image:linear-gradient(rgb(59, 30, 84), rgb(238, 238, 238));
+}
+
+/* all texts aligns to center */
+*{
+    text-align: center;
+    color: #E6D9A2;
+}
+
+h1{
+    font-family: "Protest Guerrilla", sans-serif; 
+    font-weight: 400;
+    font-style:normal
+}
+
+p{
+    font-family: "Updock", cursive;
+    font-weight: 400;
+    font-size: 100px;
+}
+
+.londrina-sketch-regular {
+    font-family: "Londrina Sketch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  

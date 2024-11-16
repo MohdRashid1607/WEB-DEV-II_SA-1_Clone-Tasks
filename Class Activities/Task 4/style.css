@@ -1,0 +1,327 @@
+html {
+    scroll-behavior:smooth
+}
+
+/*Body styling*/
+body{
+    margin: auto;
+}
+
+/* Navigation bar styling */
+header {
+    background-image: linear-gradient(white, rgb(225, 215, 183));
+    display:flex;
+    margin: auto;
+    width:100%;
+    font-size: 22px;
+    font-family: sans-serif;;
+}
+
+header nav{
+    margin: 0%;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+header nav a{
+    color: #1E2A5E;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+/* grid layout styling */
+.layout-container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.layout-sidebar{
+    background-color: #1E2A5E;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.layout-sidebar a {
+    text-decoration: none;
+    box-sizing: border-box;
+    color: white;
+}
+
+.layout-content {
+    background-color: #e1d7b7;
+    padding: 20px;
+}
+
+.layout-content h1{
+    margin: 0%;
+}
+
+textarea {
+    width: 100%;
+    height:25px;
+    box-sizing: border-box;
+    padding-top: 5px;
+    padding-left: 5px;
+    font-family: sans-serif;
+}
+
+textarea::placeholder {
+    font-family: sans-serif;
+}
+
+textarea {
+    resize: none;
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* photo grid layout styling */
+.image-container{
+    margin: 100px auto;
+    padding: 10px;
+    display: grid;
+    /*It creates number of columns based on given space,
+    minimum width of the column 250px and maximum width of the column is filled within given space*/
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    grid-auto-flow: dense;
+    grid-gap: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+
+}
+
+/* the image which are wider that takes more number of rows */
+.v-stretch {
+    grid-row: span 3;
+}
+
+/* the image which are taller that takes more number of columns */
+.h-srtetch {
+    grid-column: span 2;
+}
+
+/* photo grid layout styling for screen width of 682 px or lesser */
+@media (max-width: 682px) {
+   
+    /* the image which are taller that takes only one column */
+    .h-srtetch {
+        grid-column: span 1;
+    }
+}
+
+/* Dashboard interface layout styling */
+.interface-container {
+    background-color: #6A9AB0;
+    font-family: "Chakra Petch", sans-serif;
+    display: grid;
+    grid-template-columns: auto auto auto 10% 10%;
+}
+
+.interface-header {
+    background-color: #001F3F;
+    grid-area: 1/1/span 1/span 5;
+    color: white;
+    justify-content: center;
+}
+
+.widget{
+    text-align: center;
+    filter: invert(100);
+    margin-bottom: 20px;
+}
+
+.interface-header h1 {
+    text-align: center;
+}
+
+.interface-content {
+    grid-area: 2/1/span 4/ span 3;
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 22px;
+}
+
+.interface-sidebar{
+    grid-area: 2/4/span 4/ span 2;
+    background-color: #EAD8B1;
+    font-weight: 600;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.interface-sidebar hr {
+    border: 1px solid black;
+}
+
+/* Product page layout styling */
+.product-image {
+    grid-area: image;  /* area name of the image*/
+    height: 100%;
+    width: 100%;
+    display: grid;
+}
+
+.product-title {
+    grid-area: title;      /* area name of the title*/
+    margin: 0%;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 32px;
+}
+
+.product-description {
+    grid-area: description;   /* area name of the description*/
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.product-price {
+    grid-area: price;     /* area name of the price*/
+    margin-left: 20px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.product-container {
+    display: grid;
+
+    /* grid layout created using area names */
+    /* Three columns and three rows layout for desktop screen */
+    grid-template-areas: 
+    'image image title' 
+    'image image description' 
+    'image image price';
+    background-color: #dadb27;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+/* product page layout styling for screen width of 1109 px or lesser */
+@media (max-width: 1109px) {
+    .product-title{
+        font-size: 24px;
+    }
+
+    .product-description{
+        font-size: 22px;
+    }
+}
+
+/* product page layout styling for screen width of 1047 px or lesser */
+@media (max-width: 1047px) {
+    .product-container{
+        display: grid;
+
+        /* One column and four rows layout for tablet or mobile screen */
+        grid-template-areas: 
+        'image' 
+        'title' 
+        'description' 
+        'price';
+    }
+
+    .product-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .product-description{
+        font-size: 24px;
+    }
+
+}
+
+
+/* Quiz layout styling */
+.question {
+    grid-area: question;   /* area name of the question*/
+}
+
+.answer1 {
+    grid-area: answer1;   /* area name of the answer 1*/
+}
+
+.answer2 {
+    grid-area: answer2;   /* area name of the answer 2*/
+}
+
+.answer3 {
+    grid-area: answer3;   /* area name of the answer 3*/
+}
+
+.answer4 {
+    grid-area: answer4;   /* area name of the answer 4*/
+}
+
+.quiz-container {
+    display: grid;
+
+    /* grid layout created using area names */
+    /* four columns and two rows layout for desktop screen */
+    grid-template-areas: 
+    'question question question question' 
+    'answer1  answer2  answer3  answer4';
+    text-align: center;
+    background-color: #363062;
+    color: wheat;
+    font-size: 32px;
+    padding: 5px 0px;
+    row-gap: 25px;
+    justify-content: center;
+    padding-bottom: 50px;
+    justify-items: center;
+}
+
+
+.answer1, .answer2, .answer3, .answer4 {
+    background-color: #F99417;
+    color: #001F3F;
+    width: 250px;
+    border-radius: 10px;
+    margin: 25px;
+}
+
+
+/* Quiz layout styling for screen width of 1234 px or lesser */
+@media (max-width: 1234px) {
+    .quiz-container{
+
+        /* two columns and three rows layout for desktop or tablet screen*/
+        grid-template-areas: 
+        'question question' 
+        'answer1  answer2' 
+        'answer3  answer4';
+    }
+}
+
+/* Quiz layout styling for screen width of 713 px or lesser */
+@media (max-width: 713px) {
+    .quiz-container{
+
+        /* One columns and four rows layout for tablet or mobile screen*/
+        grid-template-areas: 
+        'question' 
+        'answer1' 
+        'answer2' 
+        'answer3' 
+        'answer4';
+    }
+}
+
+/* horizontal line for each section*/
+hr {
+    border: 5px #001F3F;
+    border-style: solid;
+    margin: 0;
+}

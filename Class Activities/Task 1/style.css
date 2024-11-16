@@ -1,0 +1,23 @@
+/* grid-container is displayed 4 column grid layout with width 100%*/
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+}
+
+/* Images are inserted inside grid item with original aspect ratio*/
+img {
+    width:100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* It removes margin from all side*/
+* {
+    margin:auto
+}
+
+/* grid item ensures there is no gaps between the rows*/
+.grid-item{
+    display: grid;
+}

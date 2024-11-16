@@ -1,0 +1,23 @@
+body {
+    background-color: #FFF2D7;
+    margin: auto;
+    font-size: 28px;
+    text-align: center;
+}
+
+/* This style is applied to odd-numbered div */
+div:nth-of-type(odd) {
+    background-color: #FFE0B5;
+    padding-left: 10px;
+}
+
+/* This style is applied to even-numbered div */
+div:nth-of-type(even) {
+    background-color: #F8C794;
+    padding-left: 5px;
+}
+
+/* this style ensures that the image will not exceed more than the given screen*/
+img{
+    max-width: 100%;
+}
